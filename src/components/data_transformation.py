@@ -73,7 +73,7 @@ class DataTransformation:
         except Exception as e:
             raise CustomException(e,sys)
         
-    def initiate_data_transformation(self, train_path, test_path):
+    def initiate_data_transformation(self,train_path,test_path):
 
         try:
             train_df=pd.read_csv(train_path)
@@ -110,8 +110,8 @@ class DataTransformation:
 
             save_object(
 
-                file_path = self.data_transformation_config.preprocessor_obj_file_path,
-                obj = preprocessing_obj
+                file_path=self.data_transformation_config.preprocessor_obj_file_path,
+                obj=preprocessing_obj
 
             )
 
